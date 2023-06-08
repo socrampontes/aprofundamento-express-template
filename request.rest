@@ -1,0 +1,26 @@
+###
+GET http://localhost:3003/accounts
+###
+GET http://localhost:3003/accounts/a001
+###
+DELETE http://localhost:3003/accounts/a003
+###Edit account by id
+PUT http://localhost:3003/accounts/a001 
+Content-Type: application/json
+
+{
+    "id": "teste",
+    "ownerName": "newOwnerName",
+    "balance": 10001,
+    "type": "Black" 
+}
+###Add account
+POST  http://localhost:3003/accounts/
+Content-Type: application/json
+
+{
+    "id": "teste",
+    "ownerName": "newOwnerName",
+    "balance": 1000,
+    "type": "Black" 
+}
